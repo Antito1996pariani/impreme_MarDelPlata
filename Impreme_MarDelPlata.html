@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Impreme_mdp</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #b3d9ff; /* Celeste pastel */
+            margin: 0;
+            padding: 0;
+            text-align: center;
+        }
+        header {
+            background-color: #3399ff;
+            color: white;
+            padding: 20px 0;
+            font-size: 24px;
+            font-weight: bold;
+        }
+        .container {
+            margin: 20px auto;
+            padding: 20px;
+            width: 90%;
+            max-width: 600px;
+            background-color: white;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        .form-group {
+            margin-bottom: 15px;
+            text-align: left;
+        }
+        .form-group label {
+            display: block;
+            margin-bottom: 5px;
+        }
+        .form-group input[type="radio"] {
+            margin-right: 5px;
+        }
+        .form-group select, .form-group input[type="submit"] {
+            width: 100%;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+        footer {
+            margin-top: 20px;
+            font-size: 14px;
+        }
+        a {
+            color: #0066cc;
+            text-decoration: none;
+        }
+    </style>
+</head>
+<body>
+    <header>Impreme_mdp</header>
+    <div class="container">
+        <form action="mailto:antito1996pariani@gmail.com" method="post" enctype="text/plain">
+            <div class="form-group">
+                <label>Seleccione el tipo de impresión:</label>
+                <input type="radio" name="tipo" value="Blanco y negro" required> Blanco y negro
+                <input type="radio" name="tipo" value="Color"> Color
+            </div>
+            <div class="form-group">
+                <label>Seleccione el acabado:</label>
+                <select name="acabado" required>
+                    <option value="Anillado">Anillado</option>
+                    <option value="Abrochado">Abrochado</option>
+                    <option value="Suelto">Suelto</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label>Seleccione el tipo de impresión:</label>
+                <input type="radio" name="fraz" value="Simple" required> Simple
+                <input type="radio" name="fraz" value="Doble faz"> Doble faz
+            </div>
+            <div class="form-group">
+                <label>Envíe sus archivos haciendo <a href="https://forms.gle/5FZyfjZryTatKqNL6" target="_blank">clic aquí</a>.</label>
+            </div>
+            <div class="form-group">
+                <input type="submit" value="Enviar">
+            </div>
+        </form>
+    </div>
+    <footer>
+        Contacto: <a href="tel:+542236899119">2236899119</a>
+    </footer>
+</body>
+</html>
